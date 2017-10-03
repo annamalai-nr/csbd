@@ -3,5 +3,6 @@
 *data
 *xml
 *~
+*swp
 data/*
 .idea/*
