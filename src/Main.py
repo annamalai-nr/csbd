@@ -21,7 +21,7 @@ def main(Args, FeatureOption):
     GetDataSet(GoodDir, ProcessNo, TimeOut)
     NumFeaturesToBeSelected = Args.numfeatures
 
-    if Args.holdout == 0:
+    if Args.randomsplit == 1:
         # Random Classification to be performed
         TestSize = Args.testsize
         Logger.debug("MalDir: {}, GoodDir: {}, ProcessNo: {}, TestSize: {}, " \
@@ -49,8 +49,8 @@ def main(Args, FeatureOption):
 
 def ParseArgs():
     Args = argparse.ArgumentParser("UserInput")
-    Args.add_argument("--holdout", default= 0, type=int,
-                      help="Type of classification to be performed(1 for Holdout Classification & 0 for Random Classification")
+    Args.add_argument("--randomsplit", default= 1, type=int,
+                      help="Type of classification to be performed(1 for Random split classification and 0 for Holdout classification")
     Args.add_argument("--maldir", default="../data/small_proto_apks/malware",
                       help="Absolute path to directory containing malware apks")
     Args.add_argument("--gooddir", default="../data/small_proto_apks/goodware",
