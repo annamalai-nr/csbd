@@ -3,6 +3,7 @@ What does this repository contain?
     This repository contains a python based reimplementation of the Android Malware Detection paper "Allix, Kevin, et al. "Empirical assessment of machine learning-based malware detectors for Android." Empirical Software Engineering 21.1 (2016): 183-211.". The paper used Control Flow Graph (CFG) signatures of methods in Android apps to detect malice apps. Hence this approach is called CFG signature based detection (CSBD), for short.
 
 What package/platform dependencies do I have to run the code?
+
     The code is developed and tested using python 2.7 on Ubuntu 16.04 PC.
     The following packages need to be installed to run the code:
     1. sklearn (==0.18.1)
@@ -52,5 +53,13 @@ How do I use it?
     and --testgooddir. The txt files will be generated automatically before the program does the hold-out classification.
     
 Who do I talk to?
-    In case of issues/difficulties in running the code, please contact me at ANNAMALA002@e.ntu.edu.sg
 
+    In case of issues/difficulties in running the code, please contact me at ANNAMALA002@e.ntu.edu.sg
+    
+    You may also contact Arief Kresnadi Ignatius Kasim at arie0010@e.ntu.edu.sg or Loo Jia Yi at e140112@e.ntu.edu.sg  
+
+When you use this code, please consider citing our paper (as a part of these papers, we provide CSBD open src implementation):
+
+    1. Narayanan, Annamalai, et al. "Context-Aware, Adaptive, and Scalable Android Malware Detection Through Online Learning." IEEE Transactions on Emerging Topics in Computational Intelligence 1.3 (2017): 157-175.
+
+    2. Narayanan, Annamalai, et al. "A Multi-view Context-aware Approach to Android Malware Detection and Malicious Code Localization." arXiv preprint arXiv:1704.01759 (2017).
